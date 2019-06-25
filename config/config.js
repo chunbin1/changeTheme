@@ -39,6 +39,9 @@ export default {
     ie: 11,
   },
 
+  /** 指定baseUrl 部署用 */
+  base: '/changeTheme/',
+  // publicPath:'/',
   /**
    * 路由相关配置
    */
@@ -52,7 +55,7 @@ export default {
       path: '/',
       component: '../layouts/BasicLayout',
       routes: [
-        { path: '/', redirect: '/welcome' },
+        { path: '/', redirect: '/theme' },
         // dashboard
         {
           path: '/welcome',
@@ -110,5 +113,4 @@ export default {
   },
 
   chainWebpack: webpackPlugin,
-
 };

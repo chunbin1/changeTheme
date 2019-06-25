@@ -1,7 +1,8 @@
 {
-  "name": "ant-design-pro",
-  "version": "2.1.1",
-  "description": "An out-of-box UI solution for enterprise applications",
+  "name": "umi-change-theme",
+  "version": "1.0.0",
+  "description": "umi框架搭建的项目 换肤功能",
+  "homepage": "https://Aledenn.github.io/changeTheme",
   "private": true,
   "scripts": {
     "start": "cross-env APP_TYPE=site umi dev",
@@ -18,7 +19,9 @@
     "test": "umi test",
     "test:component": "umi test ./src/components",
     "test:all": "node ./tests/run-tests.js",
-    "prettier": "node ./scripts/prettier.js"
+    "prettier": "node ./scripts/prettier.js",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
     "ant-design-pro": "^2.1.1",
@@ -51,6 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "prettier": "1.15.2",
