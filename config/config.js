@@ -40,8 +40,8 @@ export default {
   },
 
   /** 指定baseUrl 部署用 */
-  base: '/changeTheme/',
-  // publicPath:'/',
+  // base: '/changeTheme/',
+  // publicPath:'/changeTheme/',
   /**
    * 路由相关配置
    */
