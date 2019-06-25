@@ -6,7 +6,7 @@ import themeArr from '@/../config/themeMap';
 function Theme() {
   const changeTheme = key => {
     const index = themeArr.findIndex(element => element.name === key);
-    document.head.querySelector('#theme').setAttribute('href', `${themeArr[index].name}.css`);
+    document.head.querySelector('#theme').setAttribute('href', `/${themeArr[index].name}.css`);
   };
 
   return (
